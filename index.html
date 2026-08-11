@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#05060a" />
+  <title>GUDDU.exe — Birthday Protocol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" class="loader">
+    <div class="terminal">
+      <div class="terminal-top"><span></span><span></span><span></span></div>
+      <div class="terminal-body">
+        <p><span class="prompt">nomesh@memory-core:~$</span> boot birthday_protocol</p>
+        <p id="bootLine1"></p>
+        <p id="bootLine2"></p>
+        <p id="bootLine3"></p>
+        <p class="access">ACCESS GRANTED<span class="blink">_</span></p>
+      </div>
+    </div>
+  </div>
+
+  <canvas id="matrix"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-glow"></div>
+
+  <header class="nav">
+    <a href="#home" class="brand">GUDDU<span>.exe</span></a>
+    <div class="nav-links">
+      <a href="#memories">Memories</a>
+      <a href="#journey">Journey</a>
+      <a href="#message">Message</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-grid"></div>
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="dot"></span> BIRTHDAY PROTOCOL // 2026</div>
+        <h1 class="hero-title"><span class="title-line">Happy Birthday</span><br><span class="rainbow-text glitch-text" data-text="Guddu">Guddu</span><b class="heart-pulse">♥</b></h1>
+        <p class="hero-sub">
+          A little digital time capsule filled with childhood chaos,
+          beautiful memories, and one very special sister.
+        </p>
+        <div class="terminal-chip">
+          <span>&gt;</span> identity: <strong>GUDDU</strong>
+          <span class="sep">|</span> relation: <strong>SISTER</strong>
+        </div>
+        <div class="status-strip">
+          <span class="status-live"><i></i> LIVE MEMORY LINK</span>
+          <span class="status-text">LOVE_LEVEL: <b>∞</b></span>
+          <span class="status-text">SISTER_CORE: <b>ONLINE</b></span>
+        </div>
+        <a class="cta magnetic" href="#memories">OPEN MEMORY VAULT <span>↘</span></a>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="scan"></div>
+        <div class="photo-frame">
+          <img src="images/01_guddu_bridal_namaste.jpg" alt="Guddu in a traditional portrait">
+          <div class="frame-tag">FILE_001 // GUDDU</div>
+        </div>
+        <div class="floating-code code-one">010101<br>GUDDU</div>
+        <div class="floating-code code-two">♥ NOMESH<br>MEMORY_SYNC</div>
+      </div>
+    </section>
+
+    <section id="memories" class="section vault">
+      <div class="section-head reveal">
+        <span class="section-number">01</span>
+        <div>
+          <p class="mini">MEMORY DATABASE</p>
+          <h2 class="animated-heading">Memory <em>Vault</em></h2>
+        </div>
+      </div>
+
+      <div class="memory-grid">
+        <article class="memory-card tall reveal" data-title="Little Guddu">
+          <img src="images/02_guddu_childhood.jpg" alt="Guddu as a child">
+          <div class="card-overlay">
+            <span>FILE_002</span><h3>Little Guddu</h3><p>Before the world got to know her.</p>
+          </div>
+        </article>
+
+        <article class="memory-card reveal" data-title="Childhood Smile">
+          <img src="images/04_guddu_childhood_smile.jpg" alt="Guddu smiling as a child">
+          <div class="card-overlay">
+            <span>FILE_003</span><h3>That Smile</h3><p>Some memories never grow old.</p>
+          </div>
+        </article>
+
+        <article class="memory-card sibling reveal" data-title="Guddu + Nomesh">
+          <img src="images/03_guddu_nomesh_fun.jpg" alt="Guddu and Nomesh together">
+          <div class="card-overlay">
+            <span>SIBLING_FILE_01</span><h3>Guddu × Nomesh</h3><p>Certified nonsense. Lifetime membership.</p>
+          </div>
+        </article>
+
+        <article class="memory-card sibling reveal" data-title="Brother & Sister">
+          <img src="images/05_guddu_nomesh_memory.jpg" alt="Guddu and Nomesh together">
+          <div class="card-overlay">
+            <span>SIBLING_FILE_02</span><h3>Brother & Sister</h3><p>Different personalities. Same madness.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="journey" class="section journey">
+      <div class="section-head reveal">
+        <span class="section-number">02</span>
+        <div>
+          <p class="mini">EVOLUTION LOG</p>
+          <h2 class="animated-heading">From <em>Little Guddu</em><br>to today.</h2>
+        </div>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">01</div>
+          <div class="timeline-image"><img src="images/02_guddu_childhood.jpg" alt="Guddu childhood"></div>
+          <div class="timeline-text">
+            <p class="mini">MEMORY_001</p>
+            <h3>The Little One</h3>
+            <p>Once upon a time, there was this tiny human with a giant personality. And somehow, she became the Guddu everyone loves.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reverse reveal">
+          <div class="timeline-dot">02</div>
+          <div class="timeline-image"><img src="images/03_guddu_nomesh_fun.jpg" alt="Guddu and Nomesh"></div>
+          <div class="timeline-text">
+            <p class="mini">MEMORY_002</p>
+            <h3>Partners in Chaos</h3>
+            <p>Arguments, jokes, silly photos and countless memories. The brother-sister archive is permanently full.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot">03</div>
+          <div class="timeline-image"><img src="images/06_guddu_bava_reception.jpg" alt="Guddu and her bava at reception"></div>
+          <div class="timeline-text">
+            <p class="mini">MEMORY_003</p>
+            <h3>A Beautiful New Chapter</h3>
+            <p>A special reception memory with her bava — another beautiful chapter in Guddu's journey.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reverse reveal">
+          <div class="timeline-dot">04</div>
+          <div class="timeline-image"><img src="images/07_guddu_bridal_portrait.jpg" alt="Guddu portrait"></div>
+          <div class="timeline-text">
+            <p class="mini">MEMORY_004</p>
+            <h3>Her Glow</h3>
+            <p>Years passed, the little girl grew up, and somehow she became even more beautiful inside and out.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section special">
+      <div class="special-card reveal">
+        <div class="special-code">SPECIAL_MEMORY // 100% REAL</div>
+        <div class="special-photo">
+          <img src="images/06_guddu_bava_reception.jpg" alt="Guddu and her bava at reception">
+        </div>
+        <div class="special-copy">
+          <p class="mini">HER NEW CHAPTER</p>
+          <h2 class="animated-heading">Beautiful memories.<br><span class="rainbow-text">Beautiful future.</span></h2>
+          <p>Some photographs don't just capture a moment. They capture a whole chapter.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="message" class="section message">
+      <div class="message-terminal reveal">
+        <div class="terminal-top"><span></span><span></span><span></span><label>brother_message.txt</label></div>
+        <div class="message-body">
+          <p class="prompt">nomesh@heart:~$ cat brother_message.txt</p>
+          <h2 class="animated-heading">Dear <span class="rainbow-text">Guddu</span><span>,</span></h2>
+          <p id="typedMessage"></p>
+          <p class="signature">— Your brother, <strong>Nomesh</strong> ♥</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final section">
+      <div class="final-particles"></div>
+      <p class="mini reveal">BIRTHDAY PROTOCOL // COMPLETE</p>
+      <h2 class="reveal final-title"><span class="tiny-glitch">HAPPY BIRTHDAY</span><br><span class="rainbow-text glitch-text" data-text="Guddu">Guddu</span> <b class="heart-pulse">♥</b></h2>
+      <p class="final-text reveal">No matter how much time passes, you'll always be my sister, my memory partner, and one of the most special people in my life.</p>
+      <div class="final-sign reveal">
+        <span class="type-caret">▌</span>
+        SPECIAL WISHES FROM YOUR BROTHER <strong>NOMESH</strong>
+        <span class="type-caret">▌</span>
+      </div>
+      <button id="celebrate" class="cta reveal">CELEBRATE 🎂 <span>→</span></button>
+      <div id="confetti"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>GUDDU.exe</span>
+    <span>MADE WITH ♥ BY NOMESH</span>
+    <span>MEMORY CORE // 2026</span>
+  </footer>
+
+  <div id="lightbox" class="lightbox">
+    <button id="closeLightbox">×</button>
+    <img id="lightboxImg" src="" alt="">
+    <div id="lightboxTitle"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
